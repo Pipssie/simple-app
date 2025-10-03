@@ -1,9 +1,17 @@
-from flask import Flask
-app = Flask(app)
+from flask import Flask 
 
-@app.route("/")
-def home():
-  return "Hello from Docker + Github!"
+app = Flask(__name__) 
 
-if app == "__main__":
-  app.run(host"0.0.0.0", port=5000)
+ 
+
+@app.route("/") 
+
+def home(): 
+
+    return "Hello from Docker + GitHub!" 
+
+ 
+
+if __name__ == "__main__": 
+
+    app.run(host="0.0.0.0", port=5000) 
